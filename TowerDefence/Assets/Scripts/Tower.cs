@@ -3,12 +3,18 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     // sets the range of the child gameobject that checks 
-    public double range;
+    public float range;
     public int damage = 10;
-    public float gold;
+    public GameObject GoldManagment;
+    public int goldPerEnemy = 10;
+    private goldManager gManager;
+    
+
     void Start()
     {
-        
+        gManager = GoldManagment.GetComponent<goldManager>(); 
+        // could be box or circle collider
+        GetComponent<CircleCollider2D>().radius = range;
     }
 
     // Update is called once per frame
@@ -26,9 +32,13 @@ public class Tower : MonoBehaviour
             {
                 if(enemy.dealDamage(damage) == 0)
                 {
-                    gold +=20;
+                    gManager.addGold(goldPerEnemy);
                 }
             }
         }
+    }
+    public void OnClick()
+    {
+        
     }
 }
