@@ -4,23 +4,23 @@ public class Tower : MonoBehaviour
 {
     // sets the range of the child gameobject that checks 
     public float range;
-    public int damage = 10;
+    public int damage = 100;
     public GameObject GoldManagment;
     public int goldPerEnemy = 10;
     bool ActiveState = false;
     
     private goldManager gManager;
-    public Camera cam;
+    private Camera cam;
 
     public GameObject upgradeVisuals;
 
 
     void Start()
     {
-        upgradeVisuals.SetActive(ActiveState);
-
+        GoldManagment = GameObject.FindWithTag("GoldManager");
+        cam = Camera.main;
         gManager = GoldManagment.GetComponent<goldManager>(); 
-        // could be box or circle collider
+        upgradeVisuals.SetActive(ActiveState);
         GetComponent<CircleCollider2D>().radius = range;
     }
 
@@ -53,16 +53,21 @@ public class Tower : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, layerMask);
 
         if (hit)
-        {   
-            if(ActiveState)
+        {
+            GameObject hitObject = hit.collider.gameObject;
+
+            if (upgradeVisuals.transform == hitObject.transform.GetChild(0))
             {
-                ActiveState = false;
+                if (!ActiveState)
+                {
+                    ActiveState = true;
+                }
+                else
+                {
+                    ActiveState = false;
+                }
+                upgradeVisuals.SetActive(ActiveState);
             }
-            else
-            {
-                ActiveState = true;
-            }
-            upgradeVisuals.SetActive(ActiveState);
         }
     }
 }

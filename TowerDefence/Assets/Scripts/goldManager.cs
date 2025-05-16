@@ -6,7 +6,6 @@ public class goldManager : MonoBehaviour
     public int startingGold;
 
     private int UpgradeCost;
-
     public TextMeshProUGUI  t;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
