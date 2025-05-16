@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -10,11 +11,16 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] private LevelManagers levelManager;
 
+    public static int totalHealth = 5;
+    public TextMeshProUGUI HealthText;
+
     private Transform target;
     private int pathIndex = 0;
 
     private void Start()
     {
+        HealthText.text = "" + totalHealth;   
+
         levelManager = GetComponent<LevelManagers>();
 
         target = levelManager.path[pathIndex];
@@ -28,6 +34,7 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex >= levelManager.path.Length)
             {
+                loseHealth();
                 Destroy(gameObject);
                 return;
             }
@@ -47,5 +54,10 @@ public class EnemyMovement : MonoBehaviour
     public Transform getTarget()
     {
         return target;
+    }
+    public void loseHealth()
+    {
+        totalHealth -= 1;
+        HealthText.text = "" + totalHealth;   
     }
 }

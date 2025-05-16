@@ -8,6 +8,7 @@ public class Tower : MonoBehaviour
     public GameObject GoldManagment;
     public int goldPerEnemy = 10;
     bool ActiveState = false;
+    public static Collider2D otherEnemy;
     
     private goldManager gManager;
     private Camera cam;
@@ -37,6 +38,7 @@ public class Tower : MonoBehaviour
     {
         if(other.CompareTag("Enemy"))
         {
+            otherEnemy = other;
             Enemy enemy = other.GetComponent<Enemy>();
             if(enemy.dealDamage(damage) == 0)
             {

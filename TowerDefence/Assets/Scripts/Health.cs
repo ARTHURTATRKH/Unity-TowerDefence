@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-public class EndZone : MonoBehaviour
+public class Health : MonoBehaviour
 {
     public int totalHealth = 5;
     public TextMeshProUGUI  t;
