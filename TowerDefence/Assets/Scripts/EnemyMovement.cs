@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [Header("Reference")]
     [SerializeField] private Rigidbody2D rb;
 
-    [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
+
+    [SerializeField] private LevelManagers levelManager;
 
     private Transform target;
     private int pathIndex = 0;
 
     private void Start()
     {
-        target = LevelManagers.main.path[pathIndex];
+        levelManager = GetComponent<LevelManagers>();
+
+        target = levelManager.path[pathIndex];
     }
 
     private void Update()
@@ -23,23 +25,27 @@ public class EnemyMovement : MonoBehaviour
         if (Vector2.Distance(target.position, transform.position) <= 0.1)
         {
             pathIndex++;
-          
-            if (pathIndex >= LevelManagers.main.path.Length)
+
+            if (pathIndex >= levelManager.path.Length)
             {
                 Destroy(gameObject);
                 return;
             }
             else
             {
-                target = LevelManagers.main.path[pathIndex];
+                target = levelManager.path[pathIndex];
             }
         }
     }
 
     private void FixedUpdate()
     {
-        Vector2 direaction = (target.position - transform.position).normalized;
+        Vector2 direction = (target.position - transform.position).normalized;
 
-        rb.linearVelocity = direaction * moveSpeed;
+        rb.linearVelocity = direction * moveSpeed;
+    }
+    public Transform getTarget()
+    {
+        return target;
     }
 }

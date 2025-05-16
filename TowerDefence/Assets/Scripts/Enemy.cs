@@ -1,40 +1,25 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
-
-
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
-    public List<GameObject> listNodes;
-    public List<GameObject> Nodes = new List<GameObject>();
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public EnemyMovement enemyMovement;
     void Start()
     {
-        for(int i = 0; i < listNodes.Count; i++)
-        {
-            Nodes.Add(listNodes[i]);
-        }
+        enemyMovement = GetComponent<EnemyMovement>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        move();
+        angle();
     }
-    public void move()
+    public void angle()
     {
-        if(true)
-        {
-            // switch node when passing maybe?
-            Vector2 direction = Nodes[0].transform.position - transform.position;
+        Vector2 direction = enemyMovement.getTarget().transform.position - transform.position;
 
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            // subtract 90 bc its facing up instead of right on X axis
-            transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
-        }
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
     }
     public int dealDamage(int damage)
     {

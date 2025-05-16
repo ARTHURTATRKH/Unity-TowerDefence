@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class LevelManagers : MonoBehaviour
 {
-    public static LevelManagers main;
-
     public Transform startPoint;
-    public Transform[] path;
-
-    private void Awake()
-    {
-        main = this;
-    }
-
-
+    public Transform[] path;       
 }

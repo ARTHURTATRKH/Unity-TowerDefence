@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 39531186}
   - component: {fileID: 39531191}
   m_Layer: 0
-  m_Name: Circle2
+  m_Name: Enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,6 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 39531187}
   moveSpeed: 2
+  levelManager: {fileID: 39531191}
 --- !u!50 &39531187
 Rigidbody2D:
   serializedVersion: 5
@@ -1146,6 +1147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 355721717}
   - component: {fileID: 355721718}
+  - component: {fileID: 355721719}
   m_Layer: 6
   m_Name: ArcherTower
   m_TagString: Untagged
@@ -1223,6 +1225,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &355721719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355721716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c9cbe81a8b9fc48b508ca493a88f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archerTower: {fileID: 2868157470114157647, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
 --- !u!1 &377733164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,7 +2847,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f6f91e0c42aaa084dbcc2c4438f36c9f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19886,7 +19901,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1458746609}
-  - component: {fileID: 1458746610}
   m_Layer: 0
   m_Name: Pioints (6)
   m_TagString: Untagged
@@ -19909,26 +19923,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1003374438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1458746610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458746608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fa4dba75a6c0d5438fae97216f21886, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPoint: {fileID: 208850943}
-  path:
-  - {fileID: 2067986664}
-  - {fileID: 286707549}
-  - {fileID: 1666440562}
-  - {fileID: 2128780179}
-  - {fileID: 862931806}
-  - {fileID: 157433834}
 --- !u!1 &1490876228
 GameObject:
   m_ObjectHideFlags: 0
@@ -20620,7 +20614,7 @@ GameObject:
   - component: {fileID: 1760556728}
   - component: {fileID: 1760556730}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Enemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20746,6 +20740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1760556729}
   moveSpeed: 2
+  levelManager: {fileID: 1760556730}
 --- !u!50 &1760556729
 Rigidbody2D:
   serializedVersion: 5
