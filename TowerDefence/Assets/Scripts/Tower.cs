@@ -6,9 +6,10 @@ public class Tower : MonoBehaviour
     public float range;
     public int damage = 100;
     public GameObject GoldManagment;
+    public GameObject arrow;
     public int goldPerEnemy = 10;
     bool ActiveState = false;
-    public static Collider2D otherEnemy;
+    public static GameObject otherEnemy;
     
     private goldManager gManager;
     private Camera cam;
@@ -38,12 +39,9 @@ public class Tower : MonoBehaviour
     {
         if(other.CompareTag("Enemy"))
         {
-            otherEnemy = other;
-            Enemy enemy = other.GetComponent<Enemy>();
-            if(enemy.dealDamage(damage) == 0)
-            {
-                gManager.addGold(goldPerEnemy);
-            }
+            otherEnemy = other.gameObject;
+            Instantiate(arrow,transform.position,transform.rotation);
+ 
         }
     }
     public void OnClick()

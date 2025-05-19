@@ -102,9 +102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9676e37f0807b9044a254b4601fd69b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 2
-  damage: 100
+  range: 3
+  damage: 1
   GoldManagment: {fileID: 0}
+  arrow: {fileID: 6265112109127303088, guid: 09a0e45c6da848c43b651a4258152572, type: 3}
   goldPerEnemy: 10
   upgradeVisuals: {fileID: 5989361753148011360}
 --- !u!58 &3228960603573729625

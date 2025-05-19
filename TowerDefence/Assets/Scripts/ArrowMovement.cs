@@ -7,7 +7,7 @@ public class ArrowMovement : MonoBehaviour
     public GameObject GoldManagment;
     private goldManager gManager;
     public int goldPerEnemy = 10;
-    public int speed; 
+    public int speed;
     void Start()
     {
         GoldManagment = GameObject.FindWithTag("GoldManager");
@@ -18,22 +18,43 @@ public class ArrowMovement : MonoBehaviour
     void Update()
     {
         move();
+        angle();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
-            if (enemy.dealDamage(damage) == 0)
-            {
-                gManager.addGold(goldPerEnemy);
-            }
+            // doesnt work
+          //  if (Tower.otherEnemy == other)
+            //{
+                if (enemy.dealDamage(damage) == 0)
+                {
+                    gManager.addGold(goldPerEnemy);
+                    Destroy(gameObject);
+                }
+            //}
         }
     }
 
     public void move()
     {
-        Vector3 direction = (Tower.otherEnemy.transform.position - transform.position).normalized;
-        transform.Translate(direction  * Time.deltaTime);
+        if (Tower.otherEnemy != null)
+        {
+            Vector3 direction = (Tower.otherEnemy.transform.position - transform.position).normalized;
+            transform.Translate(direction * speed * Time.deltaTime);
+        }
+    }
+    public void angle()
+    {
+
+        if (Tower.otherEnemy != null)
+        {
+            Vector2 direction = Tower.otherEnemy.transform.position - transform.position;
+
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
+        }
     }
 }

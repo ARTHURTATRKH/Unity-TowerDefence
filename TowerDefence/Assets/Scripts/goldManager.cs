@@ -3,6 +3,7 @@ using TMPro;
 public class goldManager : MonoBehaviour
 {
     public int totalGold = 0;
+    private string gold = "Gold";
     public int startingGold;
 
     private int UpgradeCost;
@@ -11,7 +12,7 @@ public class goldManager : MonoBehaviour
     void Start()
     {
         totalGold += startingGold;
-        t.text = ""+totalGold;
+        t.text = gold+" "+totalGold;
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class goldManager : MonoBehaviour
     public void addGold(int goldAdded)
     {
         totalGold += goldAdded;
-        t.text = ""+totalGold;  
+        t.text = gold+" "+totalGold;  
     }
 
     public bool canBuyUpgrade()
