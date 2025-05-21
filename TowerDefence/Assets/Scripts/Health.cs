@@ -9,6 +9,6 @@ public class Health : MonoBehaviour
 
         totalHealth -= 1;
         t.text = "" + totalHealth;   
-        }
     }
+   
 }

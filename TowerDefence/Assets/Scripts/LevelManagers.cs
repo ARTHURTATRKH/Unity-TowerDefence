@@ -5,5 +5,5 @@ using UnityEngine;
 public class LevelManagers : MonoBehaviour
 {
     public Transform startPoint;
-    public Transform[] path;       
+    public Transform[] path;
 }
