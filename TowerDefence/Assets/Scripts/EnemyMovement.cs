@@ -10,16 +10,18 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 2f;
 
     //[SerializeField] private LevelManagers levelManager;
-
-    //public static int totalHealth = 5;
-    //public TextMeshProUGUI HealthText;
+    public int EnemyHealth;
+    public static int totalHealth = 5;
+    private TextMeshProUGUI HealthText;
 
     private Transform target1;
     private int pathIndex1 = 0;
 
     private void Start()
     {
-        //HealthText.text = "" + totalHealth;   
+        GameObject HealthTextGameObject = GameObject.Find("HealthCount");
+        HealthText = HealthTextGameObject.GetComponent<TextMeshProUGUI>();
+        HealthText.text = "" + totalHealth;
 
         //levelManager = GetComponent<LevelManagers>();
 
@@ -34,7 +36,7 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex1 >= LevelManagers.main.path1.Length)
             {
-                //loseHealth();
+                loseHealth();
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
@@ -57,12 +59,23 @@ public class EnemyMovement : MonoBehaviour
         return target1;
     }
 
-    /*
     public void loseHealth()
     {
         totalHealth -= 1;
-        HealthText.text = "" + totalHealth;   
+        HealthText.text = "" + totalHealth;
     }
-    */
+    public int dealDamage(int damage)
+    {
+        EnemyHealth -= damage;
+        if (EnemyHealth <= 0)
+        {
+            Destroy(gameObject);
+            return 0;
+        }
+        else
+        {
+            return 1;
+        }
+    }
 
 }

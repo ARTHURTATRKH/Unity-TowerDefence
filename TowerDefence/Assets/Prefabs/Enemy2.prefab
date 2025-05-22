@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6593517232565625266}
   m_Layer: 0
   m_Name: Enemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,3 +167,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2: {fileID: 235141387575545712}
   moveSpeed2: 2
+  EnemyHealth: 100

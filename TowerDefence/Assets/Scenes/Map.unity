@@ -129,7 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 15318437}
   - component: {fileID: 15318438}
-  m_Layer: 6
+  - component: {fileID: 15318439}
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +149,8 @@ Transform:
   m_LocalPosition: {x: -1.002, y: 1.02, z: -2.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1620264193}
   m_Father: {fileID: 88914652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &15318438
@@ -206,6 +208,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &15318439
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15318436}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.83
 --- !u!1 &88914651
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,9 +273,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1620264193}
   - {fileID: 15318437}
-  - {fileID: 1773636841}
   - {fileID: 297870617}
   m_Father: {fileID: 221021044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -282,7 +318,8 @@ GameObject:
   m_Component:
   - component: {fileID: 171462443}
   - component: {fileID: 171462444}
-  m_Layer: 6
+  - component: {fileID: 171462445}
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +338,8 @@ Transform:
   m_LocalPosition: {x: -1.002, y: 1.02, z: -2.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1091163148}
   m_Father: {fileID: 502972439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &171462444
@@ -359,6 +397,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &171462445
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171462442}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
 --- !u!1 &173509283
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +443,8 @@ GameObject:
   m_Component:
   - component: {fileID: 173509284}
   - component: {fileID: 173509285}
-  m_Layer: 6
+  - component: {fileID: 173509286}
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +463,8 @@ Transform:
   m_LocalPosition: {x: -1.002, y: 1.02, z: -2.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 585691041}
   m_Father: {fileID: 2039096251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &173509285
@@ -446,6 +522,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &173509286
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173509283}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
 --- !u!1 &194359782
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221021044}
-  - component: {fileID: 221021043}
+  - component: {fileID: 221021045}
   - component: {fileID: 221021042}
   m_Layer: 6
   m_Name: TowerSpawn_7
@@ -627,20 +739,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.65
---- !u!114 &221021043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221021041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba952d5a51436841b9304f0caa3ed28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerVisuals: {fileID: 88914651}
-  cam: {fileID: 1674725039}
 --- !u!4 &221021044
 Transform:
   m_ObjectHideFlags: 0
@@ -657,6 +755,22 @@ Transform:
   - {fileID: 88914652}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &221021045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221021041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ba16993c4f544e8364a3779ea7325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerVisuals: {fileID: 88914651}
+  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  WizardTower: {fileID: 2629651381887656761, guid: e1d34cc26fad7304da5fd83690adea9f, type: 3}
+  cam: {fileID: 1674725039}
 --- !u!1 &224905765
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +812,8 @@ GameObject:
   m_Component:
   - component: {fileID: 253425252}
   - component: {fileID: 253425253}
-  m_Layer: 6
+  - component: {fileID: 253425254}
+  m_Layer: 7
   m_Name: WizardTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +832,8 @@ Transform:
   m_LocalPosition: {x: 1.024, y: 1.012, z: -0.15}
   m_LocalScale: {x: 0.73, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1793760720}
   m_Father: {fileID: 967729512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &253425253
@@ -775,6 +891,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &253425254
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253425251}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.000000059604645, y: -0.000000059604645}
+  m_Radius: 0.74999994
 --- !u!1 &286707548
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,7 +968,8 @@ GameObject:
   m_Component:
   - component: {fileID: 297870617}
   - component: {fileID: 297870618}
-  m_Layer: 6
+  - component: {fileID: 297870619}
+  m_Layer: 7
   m_Name: WizardTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +988,8 @@ Transform:
   m_LocalPosition: {x: 1.024, y: 1.012, z: -0.15}
   m_LocalScale: {x: 0.73, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1773636841}
   m_Father: {fileID: 88914652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &297870618
@@ -893,6 +1047,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &297870619
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297870616}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.74999994
 --- !u!1 &304666946
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,9 +1112,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 927373007}
   - {fileID: 1668329772}
-  - {fileID: 817964296}
   - {fileID: 613051450}
   m_Father: {fileID: 1902395607}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -937,7 +1125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346679491}
-  - component: {fileID: 346679490}
+  - component: {fileID: 346679492}
   - component: {fileID: 346679489}
   m_Layer: 6
   m_Name: TowerSpawn_3
@@ -982,20 +1170,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.65
---- !u!114 &346679490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346679488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba952d5a51436841b9304f0caa3ed28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerVisuals: {fileID: 967729511}
-  cam: {fileID: 1674725039}
 --- !u!4 &346679491
 Transform:
   m_ObjectHideFlags: 0
@@ -1012,6 +1186,22 @@ Transform:
   - {fileID: 967729512}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &346679492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346679488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ba16993c4f544e8364a3779ea7325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerVisuals: {fileID: 967729511}
+  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  WizardTower: {fileID: 2629651381887656761, guid: e1d34cc26fad7304da5fd83690adea9f, type: 3}
+  cam: {fileID: 1674725039}
 --- !u!1 &355721716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1213,7 @@ GameObject:
   - component: {fileID: 355721717}
   - component: {fileID: 355721718}
   - component: {fileID: 355721719}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1042,7 +1232,8 @@ Transform:
   m_LocalPosition: {x: -1.002, y: 1.02, z: -2.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 377733165}
   m_Father: {fileID: 1614254682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &355721718
@@ -1100,19 +1291,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &355721719
-MonoBehaviour:
+--- !u!58 &355721719
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355721716}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c9cbe81a8b9fc48b508ca493a88f8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
 --- !u!1 &377733164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,7 +1337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377733165}
   - component: {fileID: 377733166}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1139,11 +1353,11 @@ Transform:
   m_GameObject: {fileID: 377733164}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: -1.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0039999485, y: -0.03999996, z: 0.62}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1614254682}
+  m_Father: {fileID: 355721717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &377733166
 SpriteRenderer:
@@ -1361,7 +1575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451885075}
   - component: {fileID: 451885076}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1377,11 +1591,11 @@ Transform:
   m_GameObject: {fileID: 451885074}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.03287678, y: -0.016438307, z: 0.15}
+  m_LocalScale: {x: 1.3698629, y: 1.3698629, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 761747144}
+  m_Father: {fileID: 1613679187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &451885076
 SpriteRenderer:
@@ -1448,7 +1662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484850068}
   - component: {fileID: 484850069}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1464,11 +1678,11 @@ Transform:
   m_GameObject: {fileID: 484850067}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.03287678, y: -0.016438307, z: 0.15}
+  m_LocalScale: {x: 1.3698629, y: 1.3698629, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2039096251}
+  m_Father: {fileID: 529873994}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &484850069
 SpriteRenderer:
@@ -1554,9 +1768,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1091163148}
   - {fileID: 171462443}
-  - {fileID: 678442470}
   - {fileID: 1490876229}
   m_Father: {fileID: 591410519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1570,7 +1782,8 @@ GameObject:
   m_Component:
   - component: {fileID: 529873994}
   - component: {fileID: 529873995}
-  m_Layer: 6
+  - component: {fileID: 529873996}
+  m_Layer: 7
   m_Name: WizardTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1589,7 +1802,8 @@ Transform:
   m_LocalPosition: {x: 1.024, y: 1.012, z: -0.15}
   m_LocalScale: {x: 0.73, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 484850068}
   m_Father: {fileID: 2039096251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &529873995
@@ -1647,6 +1861,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &529873996
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529873993}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.74999994
 --- !u!1 &585691040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585691041}
   - component: {fileID: 585691042}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1673,11 +1923,11 @@ Transform:
   m_GameObject: {fileID: 585691040}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: -1.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0039999485, y: -0.03999996, z: 0.62}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2039096251}
+  m_Father: {fileID: 173509284}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &585691042
 SpriteRenderer:
@@ -1743,7 +1993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 591410519}
-  - component: {fileID: 591410518}
+  - component: {fileID: 591410520}
   - component: {fileID: 591410517}
   m_Layer: 6
   m_Name: TowerSpawn_2
@@ -1788,20 +2038,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.65
---- !u!114 &591410518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591410516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba952d5a51436841b9304f0caa3ed28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerVisuals: {fileID: 502972438}
-  cam: {fileID: 1674725039}
 --- !u!4 &591410519
 Transform:
   m_ObjectHideFlags: 0
@@ -1818,6 +2054,22 @@ Transform:
   - {fileID: 502972439}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591410520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591410516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ba16993c4f544e8364a3779ea7325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerVisuals: {fileID: 502972438}
+  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  WizardTower: {fileID: 2629651381887656761, guid: e1d34cc26fad7304da5fd83690adea9f, type: 3}
+  cam: {fileID: 1674725039}
 --- !u!1 &613051449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,7 +2080,8 @@ GameObject:
   m_Component:
   - component: {fileID: 613051450}
   - component: {fileID: 613051451}
-  m_Layer: 6
+  - component: {fileID: 613051452}
+  m_Layer: 7
   m_Name: WizardTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1844,10 +2097,11 @@ Transform:
   m_GameObject: {fileID: 613051449}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.07, y: -0.57, z: -0.15}
+  m_LocalPosition: {x: 1.07, y: 1, z: -0.15}
   m_LocalScale: {x: 0.73, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 817964296}
   m_Father: {fileID: 304666947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &613051451
@@ -1905,6 +2159,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &613051452
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613051449}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.00000047683716}
+  m_Radius: 0.74999994
 --- !u!1 &678442469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,11 +2221,11 @@ Transform:
   m_GameObject: {fileID: 678442469}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.03287678, y: -0.016438307, z: 0.15}
+  m_LocalScale: {x: 1.3698629, y: 1.3698629, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 502972439}
+  m_Father: {fileID: 1490876229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &678442471
 SpriteRenderer:
@@ -2021,9 +2311,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1729002046}
   - {fileID: 1892211598}
-  - {fileID: 451885075}
   - {fileID: 1613679187}
   m_Father: {fileID: 2019710450}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2037,7 +2325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817964296}
   - component: {fileID: 817964297}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2053,11 +2341,11 @@ Transform:
   m_GameObject: {fileID: 817964295}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.05, y: -0.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.027397068, y: 0, z: 0.15}
+  m_LocalScale: {x: 1.3698629, y: 1.3698629, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 304666947}
+  m_Father: {fileID: 613051450}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &817964297
 SpriteRenderer:
@@ -2124,7 +2412,8 @@ GameObject:
   m_Component:
   - component: {fileID: 828278715}
   - component: {fileID: 828278716}
-  m_Layer: 6
+  - component: {fileID: 828278717}
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2143,7 +2432,8 @@ Transform:
   m_LocalPosition: {x: -1.002, y: 1.02, z: -2.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2075225520}
   m_Father: {fileID: 967729512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &828278716
@@ -2201,6 +2491,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &828278717
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828278714}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
 --- !u!1 &862931805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,7 +2568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927373007}
   - component: {fileID: 927373008}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2258,11 +2584,11 @@ Transform:
   m_GameObject: {fileID: 927373006}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -0.63, z: -1.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.62}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 304666947}
+  m_Father: {fileID: 1668329772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &927373008
 SpriteRenderer:
@@ -2329,7 +2655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955157528}
   - component: {fileID: 955157529}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2345,11 +2671,11 @@ Transform:
   m_GameObject: {fileID: 955157527}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.03287678, y: -0.016438307, z: 0.15}
+  m_LocalScale: {x: 1.3698629, y: 1.3698629, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1614254682}
+  m_Father: {fileID: 1289324944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &955157529
 SpriteRenderer:
@@ -2435,9 +2761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2075225520}
   - {fileID: 828278715}
-  - {fileID: 1793760720}
   - {fileID: 253425252}
   m_Father: {fileID: 346679491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2484,7 +2808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025285395}
-  - component: {fileID: 1025285396}
+  - component: {fileID: 1025285398}
   - component: {fileID: 1025285397}
   m_Layer: 6
   m_Name: TowerSpawn_1
@@ -2509,20 +2833,6 @@ Transform:
   - {fileID: 1614254682}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1025285396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025285394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba952d5a51436841b9304f0caa3ed28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerVisuals: {fileID: 1614254681}
-  cam: {fileID: 1674725039}
 --- !u!58 &1025285397
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2559,6 +2869,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.65
+--- !u!114 &1025285398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025285394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ba16993c4f544e8364a3779ea7325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerVisuals: {fileID: 1614254681}
+  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  WizardTower: {fileID: 2629651381887656761, guid: e1d34cc26fad7304da5fd83690adea9f, type: 3}
+  cam: {fileID: 1674725039}
 --- !u!1 &1088081851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,7 +2894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1088081854}
-  - component: {fileID: 1088081853}
+  - component: {fileID: 1088081855}
   - component: {fileID: 1088081852}
   m_Layer: 6
   m_Name: TowerSpawn_4
@@ -2613,20 +2939,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.65
---- !u!114 &1088081853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088081851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba952d5a51436841b9304f0caa3ed28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerVisuals: {fileID: 2039096250}
-  cam: {fileID: 1674725039}
 --- !u!4 &1088081854
 Transform:
   m_ObjectHideFlags: 0
@@ -2643,6 +2955,22 @@ Transform:
   - {fileID: 2039096251}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1088081855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088081851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ba16993c4f544e8364a3779ea7325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerVisuals: {fileID: 2039096250}
+  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  WizardTower: {fileID: 2629651381887656761, guid: e1d34cc26fad7304da5fd83690adea9f, type: 3}
+  cam: {fileID: 1674725039}
 --- !u!1 &1091163147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1091163148}
   - component: {fileID: 1091163149}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2669,11 +2997,11 @@ Transform:
   m_GameObject: {fileID: 1091163147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: -1.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0039999485, y: -0.03999996, z: 0.62}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 502972439}
+  m_Father: {fileID: 171462443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1091163149
 SpriteRenderer:
@@ -2740,7 +3068,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1289324944}
   - component: {fileID: 1289324945}
-  m_Layer: 6
+  - component: {fileID: 1289324946}
+  m_Layer: 7
   m_Name: WizardTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2759,7 +3088,8 @@ Transform:
   m_LocalPosition: {x: 1.024, y: 1.012, z: -0.15}
   m_LocalScale: {x: 0.73, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 955157528}
   m_Father: {fileID: 1614254682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1289324945
@@ -2817,6 +3147,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1289324946
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289324943}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.00000047683716, y: 0.00000047683716}
+  m_Radius: 0.74999994
 --- !u!1 &1348860823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,7 +3194,7 @@ GameObject:
   - component: {fileID: 1348860824}
   - component: {fileID: 1348860826}
   - component: {fileID: 1348860825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2873,7 +3239,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f6f91e0c42aaa084dbcc2c4438f36c9f, type: 2}
+  - {fileID: 2100000, guid: 9f74ca08a7da8824b98a82cbec38f318, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19959,6 +20325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1490876229}
   - component: {fileID: 1490876230}
+  - component: {fileID: 1490876231}
   m_Layer: 6
   m_Name: WizardTower
   m_TagString: Untagged
@@ -19978,7 +20345,8 @@ Transform:
   m_LocalPosition: {x: 1.024, y: 1.012, z: -0.15}
   m_LocalScale: {x: 0.73, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 678442470}
   m_Father: {fileID: 502972439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1490876230
@@ -20036,6 +20404,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1490876231
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490876228}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.74999994
 --- !u!1 &1516541108
 GameObject:
   m_ObjectHideFlags: 0
@@ -20229,7 +20633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20318,7 +20722,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1613679187}
   - component: {fileID: 1613679188}
-  m_Layer: 6
+  - component: {fileID: 1613679189}
+  m_Layer: 7
   m_Name: WizardTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20337,7 +20742,8 @@ Transform:
   m_LocalPosition: {x: 1.024, y: 1.012, z: -0.15}
   m_LocalScale: {x: 0.73, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 451885075}
   m_Father: {fileID: 761747144}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1613679188
@@ -20395,6 +20801,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1613679189
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613679186}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.000000048428774, y: 0.00000047683716}
+  m_Radius: 0.74999994
 --- !u!1 &1614254681
 GameObject:
   m_ObjectHideFlags: 0
@@ -20424,9 +20866,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 377733165}
   - {fileID: 355721717}
-  - {fileID: 955157528}
   - {fileID: 1289324944}
   m_Father: {fileID: 1025285395}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20478,7 +20918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620264193}
   - component: {fileID: 1620264194}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20494,11 +20934,11 @@ Transform:
   m_GameObject: {fileID: 1620264192}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: -1.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0039999485, y: -0.03999996, z: 0.62}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 88914652}
+  m_Father: {fileID: 15318437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1620264194
 SpriteRenderer:
@@ -20596,7 +21036,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1668329772}
   - component: {fileID: 1668329773}
-  m_Layer: 6
+  - component: {fileID: 1668329774}
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20612,10 +21053,11 @@ Transform:
   m_GameObject: {fileID: 1668329771}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -0.65, z: -2.8}
+  m_LocalPosition: {x: -0.84, y: 1, z: -2.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 927373007}
   m_Father: {fileID: 304666947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1668329773
@@ -20673,6 +21115,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1668329774
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668329771}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
 --- !u!1 &1674725037
 GameObject:
   m_ObjectHideFlags: 0
@@ -20984,7 +21462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729002046}
   - component: {fileID: 1729002047}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21000,11 +21478,11 @@ Transform:
   m_GameObject: {fileID: 1729002045}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: -1.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0039999485, y: -0.03999996, z: 0.62}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 761747144}
+  m_Father: {fileID: 1892211598}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1729002047
 SpriteRenderer:
@@ -21071,7 +21549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773636841}
   - component: {fileID: 1773636842}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21087,11 +21565,11 @@ Transform:
   m_GameObject: {fileID: 1773636840}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.03287678, y: -0.016438307, z: 0.15}
+  m_LocalScale: {x: 1.3698629, y: 1.3698629, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 88914652}
+  m_Father: {fileID: 297870617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1773636842
 SpriteRenderer:
@@ -21158,7 +21636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1793760720}
   - component: {fileID: 1793760721}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21174,11 +21652,11 @@ Transform:
   m_GameObject: {fileID: 1793760719}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.03287678, y: -0.016438307, z: 0.15}
+  m_LocalScale: {x: 1.3698629, y: 1.3698629, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 967729512}
+  m_Father: {fileID: 253425252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1793760721
 SpriteRenderer:
@@ -21245,7 +21723,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1892211598}
   - component: {fileID: 1892211599}
-  m_Layer: 6
+  - component: {fileID: 1892211600}
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21264,7 +21743,8 @@ Transform:
   m_LocalPosition: {x: -1.002, y: 1.02, z: -2.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1729002046}
   m_Father: {fileID: 761747144}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1892211599
@@ -21322,6 +21802,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1892211600
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892211597}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.83
 --- !u!1 &1902395604
 GameObject:
   m_ObjectHideFlags: 0
@@ -21331,7 +21847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1902395607}
-  - component: {fileID: 1902395606}
+  - component: {fileID: 1902395608}
   - component: {fileID: 1902395605}
   m_Layer: 6
   m_Name: TowerSpawn_5
@@ -21376,20 +21892,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.65
---- !u!114 &1902395606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902395604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba952d5a51436841b9304f0caa3ed28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerVisuals: {fileID: 304666946}
-  cam: {fileID: 1674725039}
 --- !u!4 &1902395607
 Transform:
   m_ObjectHideFlags: 0
@@ -21406,6 +21908,22 @@ Transform:
   - {fileID: 304666947}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1902395608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902395604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ba16993c4f544e8364a3779ea7325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerVisuals: {fileID: 304666946}
+  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  WizardTower: {fileID: 2629651381887656761, guid: e1d34cc26fad7304da5fd83690adea9f, type: 3}
+  cam: {fileID: 1674725039}
 --- !u!1 &2019710447
 GameObject:
   m_ObjectHideFlags: 0
@@ -21415,7 +21933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2019710450}
-  - component: {fileID: 2019710449}
+  - component: {fileID: 2019710451}
   - component: {fileID: 2019710448}
   m_Layer: 6
   m_Name: TowerSpawn_6
@@ -21460,20 +21978,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.65
---- !u!114 &2019710449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019710447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba952d5a51436841b9304f0caa3ed28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerVisuals: {fileID: 761747143}
-  cam: {fileID: 1674725039}
 --- !u!4 &2019710450
 Transform:
   m_ObjectHideFlags: 0
@@ -21490,6 +21994,22 @@ Transform:
   - {fileID: 761747144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019710451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019710447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ba16993c4f544e8364a3779ea7325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerVisuals: {fileID: 761747143}
+  archerTower: {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
+  WizardTower: {fileID: 2629651381887656761, guid: e1d34cc26fad7304da5fd83690adea9f, type: 3}
+  cam: {fileID: 1674725039}
 --- !u!1 &2039096250
 GameObject:
   m_ObjectHideFlags: 0
@@ -21519,9 +22039,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 585691041}
   - {fileID: 173509284}
-  - {fileID: 484850068}
   - {fileID: 529873994}
   m_Father: {fileID: 1088081854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21566,7 +22084,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075225520}
   - component: {fileID: 2075225521}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21582,11 +22100,11 @@ Transform:
   m_GameObject: {fileID: 2075225519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: -1.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0039999485, y: -0.03999996, z: 0.62}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 967729512}
+  m_Father: {fileID: 828278715}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2075225521
 SpriteRenderer:
@@ -21653,7 +22171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100413503}
   - component: {fileID: 2100413502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21700,7 +22218,7 @@ GameObject:
   - component: {fileID: 2124851752}
   - component: {fileID: 2124851754}
   - component: {fileID: 2124851753}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
