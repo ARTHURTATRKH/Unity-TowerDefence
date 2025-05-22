@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class LevelManagers : MonoBehaviour
 {
-    public Transform startPoint;
-    public Transform[] path;
+
+    public static LevelManagers main;
+
+    public Transform startPoint1;
+    public Transform startPoint2;
+
+    public Transform[] path1;
+    public Transform[] path2;
+
+    public void Awake()
+    {
+        main = this;
+    }
 }

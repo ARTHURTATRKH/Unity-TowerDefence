@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 194359784}
   - component: {fileID: 194359785}
   - component: {fileID: 194359786}
+  - component: {fileID: 194359787}
   m_Layer: 0
   m_Name: LevelManagers
   m_TagString: Untagged
@@ -491,9 +492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d820032419384192cab9c597fd00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 194359786}
   enemyPrefabs:
-  - {fileID: 2251503623007999751, guid: 8b62782e5e09f374f9cc3d6b31f02d7a, type: 3}
+  - {fileID: 1590607717867147671, guid: 8b62782e5e09f374f9cc3d6b31f02d7a, type: 3}
+  - {fileID: 8061836752386669557, guid: ffecf51378924964ba41c555ba7a6acf, type: 3}
   baseEnemies: 8
   enemiesPerSecond: 0.5
   timeBetweenWaves: 5
@@ -510,14 +511,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa4dba75a6c0d5438fae97216f21886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 208850943}
-  path:
+  startPoint1: {fileID: 208850943}
+  startPoint2: {fileID: 224905766}
+  path1:
   - {fileID: 2067986664}
   - {fileID: 286707549}
   - {fileID: 1666440562}
   - {fileID: 2128780179}
   - {fileID: 862931806}
   - {fileID: 157433834}
+  path2:
+  - {fileID: 1458746609}
+  - {fileID: 2133560861}
+  - {fileID: 286707549}
+  - {fileID: 1666440562}
+  - {fileID: 2128780179}
+  - {fileID: 862931806}
+  - {fileID: 157433834}
+--- !u!114 &194359787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194359782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7284725a75b83374bafaec17bc033032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerPrefabs:
+  - {fileID: 5957206317832564145, guid: bdb06e17948140f45a2b9ff10ebdb771, type: 3}
 --- !u!1 &208850942
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     }
     public void angle()
     {
-        Vector2 direction = enemyMovement.getTarget().transform.position - transform.position;
+        Vector2 direction = enemyMovement.getTarget1().transform.position - transform.position;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 

@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public LevelManagers levelManager;
+    //public LevelManagers levelManager;
 
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
@@ -65,8 +65,18 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject PrefabToSpawn = enemyPrefabs[0];
-        Instantiate(PrefabToSpawn, levelManager.startPoint.position,Quaternion.identity);
+        GameObject PrefabToSpawn1 = enemyPrefabs[0];
+        GameObject PrefabToSpawn2 = enemyPrefabs[1];
+
+        //Instantiate(PrefabToSpawn, levelManager.startPoint.position,Quaternion.identity);
+        if (enemiesAlive <= enemiesLeftToSpawn/2)
+        {
+            Instantiate(PrefabToSpawn1, LevelManagers.main.startPoint1.position, Quaternion.identity);
+        }
+        else
+        {
+            Instantiate(PrefabToSpawn2, LevelManagers.main.startPoint2.position, Quaternion.identity);
+        }
     }
 
     private IEnumerator StartWave()

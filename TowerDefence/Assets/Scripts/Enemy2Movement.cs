@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class Enemy2Movement : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb1;
+    [SerializeField] private Rigidbody2D rb2;
 
-    [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private float moveSpeed2 = 2f;
 
     //[SerializeField] private LevelManagers levelManager;
 
     //public static int totalHealth = 5;
     //public TextMeshProUGUI HealthText;
 
-    private Transform target1;
-    private int pathIndex1 = 0;
+    private Transform target2;
+    private int pathIndex2 = 0;
 
     private void Start()
     {
@@ -23,38 +23,38 @@ public class EnemyMovement : MonoBehaviour
 
         //levelManager = GetComponent<LevelManagers>();
 
-        target1 = LevelManagers.main.path1[pathIndex1];
+        target2 = LevelManagers.main.path2[pathIndex2];
     }
 
     private void Update()
     {
-        if (Vector2.Distance(target1.position, transform.position) <= 0.1)
+        if (Vector2.Distance(target2.position, transform.position) <= 0.1)
         {
-            pathIndex1++;
+            pathIndex2++;
 
-            if (pathIndex1 >= LevelManagers.main.path1.Length)
+            if (pathIndex2 >= LevelManagers.main.path2.Length)
             {
-                //loseHealth();
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
             }
             else
             {
-                target1 = LevelManagers.main.path1[pathIndex1];
+                target2 = LevelManagers.main.path2[pathIndex2];
             }
         }
+
     }
 
     private void FixedUpdate()
     {
-        Vector2 direction1 = (target1.position - transform.position).normalized;
+        Vector2 direction2 = (target2.position - transform.position).normalized;
 
-        rb1.linearVelocity = direction1 * moveSpeed;
-    }
-    public Transform getTarget1()
+        rb2.linearVelocity = direction2 * moveSpeed2;
+    }   
+    public Transform getTarget2()
     {
-        return target1;
+        return target2;
     }
 
     /*
